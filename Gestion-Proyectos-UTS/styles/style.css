@@ -1,0 +1,367 @@
+/* IMPORTACIONES */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ROOT DE COLORES */
+
+:root {
+  --white: rgb(255, 255, 255);
+  --green: rgb(0, 182, 0);
+  --green-light-2: rgb(0, 218, 0);
+  --green-light: rgb(181, 203, 41);
+  --green-medium-light: rgb(153, 172, 34);
+  --green-light-opacity-30: rgba(181, 203, 41, 0.3);
+  --blue-dark: rgb(11, 74, 117);
+  --blue: rgb(48, 103, 255);
+  --red: rgb(228, 0, 0);
+  --red-light: rgba(255, 0, 0);
+  --gray: #495057;
+  --gray-opacity-10: rgba(128, 128, 128, 0.2);
+  --white-medium: #ced4da;
+  --white-medium-2: #dee2e6;
+}
+
+/* ESTILOS GENERALES BASICOS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  padding: 0px 40px;
+}
+
+header figure {
+  margin: auto 0;
+  height: 90%;
+}
+
+header figure img {
+  height: 100%;
+}
+
+/* CUERPO DE PAGINA */
+
+main {
+  flex: 1;
+  width: 100%;
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.shadow-gray-container{
+  box-shadow: 0 4px 8px var(--gray-opacity-10);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-control {
+  padding: 22px 10px;
+}
+
+.form-dates {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form-select{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  color: var(--gray);
+  border: 1px solid var(--white-medium);
+}
+
+.form-submit{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sesion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.sesion p{
+  margin: 0;
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert-danger {
+  text-align: center;
+}
+
+.activate{
+  display: block;
+}
+
+.desactivate{
+  display: none;
+}
+
+.alert-success {
+  text-align: center;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  
+}
+
+.container-principal h1 {
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.container-principal p {
+  font-size: 1.5em;
+}
+
+.buttons {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+}
+
+.btn-primary {
+  min-width: 150px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: var(--blue-dark);
+  border: none;
+  transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 0px 10px 1px var(--blue);
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  min-width: 150px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: var(--red);
+  transition: 300ms ease all;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: var(--red-light);
+  box-shadow: 0px 0px 10px 1px var(--red-light);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  min-width: 150px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  transition: 300ms ease all;
+  border: none;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0px 0px 10px 1px var(--gray);
+  transform: scale(1.05);
+}
+
+.btn-success {
+  min-width: 150px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: var(--green);
+  transition: 300ms ease all;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: var(--green);
+  box-shadow: 0px 0px 10px 1px var(--green-light-2);
+  transform: scale(1.05);
+}
+
+.btn-green {
+  min-width: 150px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: var(--green-medium-light);
+  border: none;
+  transition: all 300ms ease;
+  color: var(--white);
+}
+
+.btn-green:hover{
+  background-color: var(--green-light);
+  box-shadow: 0px 0px 10px 1px var(--green-light);
+  transform: scale(1.05);
+}
+
+.btn-green:hover {
+  transform: scale(1.05);
+  color: var(--white);
+  box-shadow: 0px 0px 10px 8px var(--green-light-opacity-30);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.table .thead-light th{
+  color: var(--white);
+  background-color: var(--green-medium-light);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.table td{
+  border: 1px solid var(--white-medium-2);
+}
+/* FOOTER */
+
+footer {
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-light);
+}
+
+footer p {
+  color: var(--white);
+  margin: 10px 0;
+}
+
+/* LOGIN */
+
+.page-login {
+  flex-direction: row;
+}
+
+.page-login .container-login {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 100vh;
+}
+
+.page-login .img-login {
+  width: 70%;
+  height: 100vh;
+  background: url("../img/portada login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-login .container-form {
+  margin-top: 2em;
+  flex: 1;
+  width: 90%;
+  gap: 20px;
+}
+
+.page-login .container-form figure {
+  width: 50%;
+}
+
+.page-login .container-form figure img {
+  width: 100%;
+}
+
+.page-login .container-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.page-login .container-form form .form-group {
+  width: 100%;
+}
+
+.page-login .container-form form label {
+  font-size: 1.2em;
+}
+
+.page-login .alert-danger {
+  width: 90%;
+}
+
+/* CRUDS */
+
+.page-crud-service .container-principal {
+  width: 90%;
+}
+
+.page-crud-service .container-form {
+  margin-top: 2em;
+  width: 70%;
+}
+
+.page-crud-service .container-form form {
+  width: 100%;
+}
+
+/* CRUD PRINCIPAL */
+
+.page-crud-principal .container-principal figure{
+  min-height: 150px;
+  max-height: 250px;
+}
+
+.page-crud-principal .container-principal figure img{
+  height: 100%;
+}
+
+/* MOSTRAR */
+
+.page-view-service main{
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page-view-service .container-table{
+  width: 90%;
+}
