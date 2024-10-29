@@ -4,7 +4,7 @@
 <sql:setDataSource
     var = "dbUtsProjects"
     driver = "com.mysql.jdbc.Driver"
-    url = "jdbc:mysql://localhost:3306/gestion_proyectos_uts"
-    user = "root"
-    password = ""
+    url = "jdbc:mysql://byj4xgy5yt0luorzdpoe-mysql.services.clever-cloud.com:3306/byj4xgy5yt0luorzdpoe"
+    user = "u9di8rpygnzl3gzi"
+    password = "Kn3qhQH1L0QxejVpgSOj"
 />
